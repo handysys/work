@@ -1,0 +1,153 @@
+<div class="patient-page">
+  <div class="title">
+    <div class="text">{{ 'patient-top.title' | translate }}</div>
+    <div class="logo">
+      <img src="assets/imgs/main/Egrifta_Logo_Small.png" alt="logo" />
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="leftPanl">
+      <p class="description" [innerHTML]="'patient-top.description' | translate">
+      </p>
+      <div class="panel">
+        <a (click)="toggle(0)">{{'patient-left.title' | translate}}
+          <span class="icon">
+            <i class="fa fa-chevron-down" *ngIf="!panels[0]"></i>
+            <i class="fa fa-chevron-up" *ngIf="panels[0]"></i>
+          </span>
+        </a>
+      </div>
+      <dl class="outer" [ngClass]="{'show': panels[0] }">
+        <dt>{{'patient-left.dt1' | translate}}
+          <div class="description">
+            {{'patient-left.description1' | translate}}
+          </div>
+          <ul class="inner">
+            <li>
+              {{'patient-left.list1out1' | translate}}
+              <ul class="inner">
+                <li>{{'patient-left.list1out1inner1' | translate}}</li>
+                <li>{{'patient-left.list1out1inner2' | translate}}</li>
+                <li>{{'patient-left.list1out1inner3' | translate}}</li>
+              </ul>
+            </li>
+            <li>{{'patient-left.list1out2' | translate}}</li>
+            <li>{{'patient-left.list1out3' | translate}}</li>
+            <li>{{'patient-left.list1out4' | translate}}</li>
+            <li>{{'patient-left.list1out5' | translate}}</li>
+            <li>{{'patient-left.list1out6' | translate}}</li>
+          </ul>
+        </dt>
+
+        <div class="link">
+          <span>{{'patient-right.button1.text' | translate}}</span>
+          <a href="{{'patient-right.button1.link' | translate}}">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link">
+          <span>{{'patient-right.button2.text' | translate}}</span>
+          <a href="{{'patient-right.button2.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="border"></div>
+        <dt>{{'patient-left.dt2' | translate}}
+          <div class="description">
+            {{'patient-left.description2' | translate}}
+          </div>
+          <ul class="inner">
+            <li>{{'patient-left.list2out1' | translate}}</li>
+            <li>{{'patient-left.list2out2' | translate}}</li>
+            <li>{{'patient-left.list2out3' | translate}}</li>
+          </ul>
+        </dt>
+        <!-- <div class="border"></div> -->
+        <div class="link">
+          <span>{{'patient-right.button3.text' | translate}}</span>
+          <a href="{{'patient-right.button3.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link">
+          <span>{{'patient-right.button4.text' | translate}}</span>
+          <a href="{{'patient-right.button4.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link">
+          <span>{{'patient-right.button5.text' | translate}}</span>
+          <a class="pointer">
+            <i class="fa fa-chevron-right" onclick="app.openVideo()"></i>
+          </a>
+        </div>
+      </dl>
+    </div>
+    <div class="rightPanel">
+      <div class="box">
+        <div class="emphasize panel">
+          <a (click)="toggle(1)">{{'patient-right.title1' | translate}}
+            <span class="icon">
+              <i class="fa fa-chevron-down" *ngIf="!panels[1]"></i>
+              <i class="fa fa-chevron-up" *ngIf="panels[1]"></i>
+            </span>
+          </a>
+        </div>
+        <div class="desc" [ngClass]="{'show': panels[1]}">
+          <p [innerHTML]="'patient-right.p1' | translate"></p>
+          <p>{{'patient-right.p2' | translate}}</p>
+          <div class="link">
+            <span>{{'patient-right.button1.text' | translate}}</span>
+            <a href="{{'patient-right.button1.link' | translate}}">
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="emphasize panel">
+          <a (click)="toggle(2)">{{'patient-right.title2' | translate}}
+            <span class="icon">
+              <i class="fa fa-chevron-down" *ngIf="!panels[2]"></i>
+              <i class="fa fa-chevron-up" *ngIf="panels[2]"></i>
+            </span>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button1.text' | translate}}</span>
+          <a href="{{'patient-right.button1.link' | translate}}">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button2.text' | translate}}</span>
+          <a href="{{'patient-right.button2.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button3.text' | translate}}</span>
+          <a href="{{'patient-right.button3.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button4.text' | translate}}</span>
+          <a href="{{'patient-right.button4.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button5.text' | translate}}</span>
+          <a class="pointer">
+            <i class="fa fa-chevron-right" onclick="app.openVideo()"></i>
+          </a>
+        </div>
+        <div class="link" [ngClass]="{'show': panels[2]}">
+          <span>{{'patient-right.button6.text' | translate}}</span>
+          <a href="{{'patient-right.button6.link' | translate}}" target="_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

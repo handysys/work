@@ -1,0 +1,53 @@
+
+<div id = "main-page-container">
+    <div id = "main-logo-section">
+      <img src="assets/imgs/main/Thera_Logo_Big.png" alt="Thera patient support logo">
+    </div>
+    <div class = "slogan">
+      <h1 class = "dark-blue">THERA patient support™ is here to help</h1>
+    </div>
+    <div class = "upper-line line">
+      <img src="assets/imgs/main/Dot_Line.png" alt="">
+    </div>
+    <div class = "option-section">
+      <div class = "client-type">
+        <div id = "patient" class = "patient button button-left" (click)="setPath2('patient')" [ngClass]="{'active': states['patient']['active']}">
+          <div class = "button-logo">
+            <img src='{{states["patient"]["imgs"][states["patient"]["active"]]}}' alt="Patient Inactive">
+          </div>
+          <div class = "button-text">
+            PATIENT
+          </div>    
+        </div>
+        <div id = "provider" class = "button button-right two" (click)="setPath2('hcp')" [ngClass]="{'active': states['hcp']['active']}">
+          <div class = "button-logo">
+            <img src='{{states["hcp"]["imgs"][states["hcp"]["active"]]}}'  alt="HCP Inactive">
+          </div>
+          <div class = "button-text two">
+            HEALTHCARE
+          </div>    
+        </div>
+      </div>
+      <div class = "sub-title">
+          <h3 class = "dark-blue">I would like to know more about…</h3>
+      </div> 
+      <div class = "info-type">
+        <div id = "trogarzo" class = "button button-left" (click)="setPath1('trogarzo')" [ngClass]="{'active': states['trogarzo']['active']}">
+         
+            <img src="assets/imgs/main/Trogarzo_Logo_Small.png" alt="Trogarzo logo">
+          
+        </div>
+        <div id = "egrifta"  class = "button button-right" (click)="setPath1('egrifta')" [ngClass]="{'active': states['egrifta']['active']}">
+            <img src="assets/imgs/main/Egrifta_Logo_Small.png" alt="Egrifta logo">
+        </div>
+      </div>
+    </div>
+    <div class = "bottom-line line" >
+      <img src="assets/imgs/main/Dot_Line.png" alt="dot line">
+    </div>
+    <div class = "continue-button" (click)="navigate()" [ngClass]="{'active': states['continue']['active']}">
+      <img id = "continue" src="{{states['continue']['imgs'][states['continue']['active']]}}" alt="Continue inactive">
+    </div>
+  </div>
+  
+

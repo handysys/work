@@ -1,0 +1,17 @@
+@import '../epatient/epatient.component.scss';
+@import "../../../mixin.scss";
+.hcp-page{
+    .leftPanl{
+        .outer{
+            dt{
+                ul.inner.last{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+body app-head.egrifta header div.lang {
+    display: none;
+}

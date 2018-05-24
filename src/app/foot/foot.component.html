@@ -1,0 +1,21 @@
+<footer>
+  <div class="statement">
+    <a href="http://theratech.com/#/privacy-policy" target="_blank">{{'footer.privacy' | translate}}</a>
+    <span>|</span>
+    <a href="http://theratech.com/#/terms-of-use" target="_blank">{{'footer.legal' | translate}}</a>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <a href="http://theratech.com">
+        <img src="assets/imgs/main/Theralogo.png" alt="Theratechnologies logo" width="125" />
+      </a>
+    </div>
+    <div class="legal_info">
+      <div class = "egrifta" [innerHTML]= "'footer.egrifta' | translate" *ngIf = "!trogarzo"></div>
+      <div class = "trogarzo" [innerHTML]= "'footer.trogarzo' | translate" *ngIf = "!egrifta"></div>
+      <div class = "info" [innerHTML]= "'footer.info' | translate"></div>
+    </div>
+    <div class="version_info ">423-01-05-2018</div>
+  </div>
+</footer>

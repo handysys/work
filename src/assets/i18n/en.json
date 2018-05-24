@@ -1,0 +1,104 @@
+{
+    "header": {
+        "patient": "For Patients",
+        "hcp": "For Health Care Providers",
+        "form": "Request more information",
+        "website": "Visit Egrifta.com",
+        "contact": "1-833-23-THERA (1-833-238-4372), Mon-Fri 8AM-8PM ET"
+    },
+
+    "footer": {
+        "privacy": "Privacy Policy",
+        "legal" : "Legal Statement",
+        "info" : "© 2018 Theratechnologies Inc. All rights reserved",
+        "trogarzo" : "TROGARZO™ is a trademark of TaiMed Biologics Inc., under license to Theratechnologies Inc. ",
+        "egrifta" : "EGRIFTA® is a registered trademark of Theratechnologies Inc."
+    },
+
+    "patient-top": {
+        "title": "THERA patient support™ is here to help",
+        "description": "Along with talking to your health care provider, <span class='emphasize'>THERA patient support™</span> is your go-to resource when you need additional guidance and support during therapy. From guiding you through insurance issues to answering common therapy-related questions, our knowledgeable and attentive team is there for you."
+    },
+ 
+    "patient-left": {
+        "title": "PROGRAM SERVICES",
+        "dt1": "Access and assistance throughout treatment",
+        "description1": "Expert Patient Care Coordinators are standing by to help you:",
+        "list1out1": "Enroll in the EGRIFTA® Co-Pay Assistance Program that covers up to $6,000 per calendar year, if eligible",
+        "list1out1inner1": "Only for commercially insured patients",
+        "list1out1inner2": "Maximum of 12 prescriptions per year",
+        "list1out1inner3": "No activation required by you or your physician",
+        "list1out2": "Identify the best insurance and coverage options",
+        "list1out3": "Follow up about your insurance benefits",
+        "list1out4": "Find the right specialty pharmacies in your insurance network, so you can quickly receive your medication",
+        "list1out5": "Help you get ready for therapy (we provide educational materials and sharps containers, if needed)",
+        "list1out6": "Verify eligibility to enroll in the EGRIFTA® Financial Assistance Program which may help with the cost of therapy",
+        "dt2": "Added support from Staff Nurses",
+        "description2": "Our experienced and attentive Staff Nurses are ready to help:",
+        "list2out1": "Train on how to properly mix and inject EGRIFTA®",
+        "list2out2": "Share advice for starting and staying on therapy",
+        "list2out3": "Answer common therapy-related questions throughout your treatment"        
+    },
+
+    "patient-right": {
+        "title1": "HOW TO GET STARTED",
+        "p1": "To get started on EGRIFTA® and connected with THERA patient support™, download the <b>EGRIFTA® Enrollment Form.</b>",
+        "p2": "Bring this form with you to your next health care provider appointment, along with your insurance information.",
+        "title2": "FORMS AND RESOURCES",
+        "button1": {
+            "text": "EGRIFTA® Enrollment Form",
+            "link": "#"
+        },
+        "button2": {
+            "text": "EGRIFTA® Patient Authorization & Electronic Signature",
+            "link": "#"
+        },
+        "button3": {
+            "text": "EGRIFTA® Patient Brochure",
+            "link": "#"
+        },
+        "button4": {
+            "text": "EGRIFTA® Step-by-step Administration Guide",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Step-By-Step-Guide.pdf"
+        },
+        "button5": {
+            "text": "EGRIFTA® Step-by-step Administration Video"
+        },
+        "button6": {
+            "text": "EGRIFTA® Prescribing Information ",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Prescribing-Information.pdf"
+        }
+    },
+
+    "form": {
+        "title": "To request more information on the THERA patient support™ Program, please complete the form below.",
+        "require": "*Require field.",
+        "type": "I am a: ",
+        "patient": "Patient",
+        "hcp": "Health Care Provider",
+        "error1": "Please let us know about you",
+        "error2": "Please enter your first name",
+        "error3": "Please enter your last name",
+        "error4": "Please enter your city",
+        "error5": "Please enter your state",
+        "error6": "Please enter valid ZIP code",
+        "error7": "Please enter your telephone number including area code",
+        "error8": "Please enter valid email address",
+        "error9": "Please enter your information request",
+        "fname": "*First Name",
+        "lname": "*Last Name",
+        "address": "Address",
+        "city": "*City",
+        "state": "*State",
+        "zip": "*ZIP Code",
+        "phone": "*Telephone",
+        "mail": "*Email",
+        "comment": "*Comments",
+        "legal": "By providing the above information, you agree to allow Theratechnologies Inc. to provide you with information relating to Theratechnologies' products. <br> The information you submit will be governed by our <a href = 'http://www.theratech.com/#/privacy-policy' target = '_blank'>Privacy Policy.",
+        "submit": "assets/imgs/form/Submit_Active.png",
+        "cancel": "assets/imgs/form/Cancel_Active.png",
+        "thanks": "Thank you for your request.",
+        "info": "A representative from <b>THERA patient support™</b> will be in touch with you shortly.",
+        "back": "assets/imgs/form/Home_active.png"
+    }
+}

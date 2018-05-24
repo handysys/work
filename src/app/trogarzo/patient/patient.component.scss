@@ -1,0 +1,277 @@
+@import "../../../mixin.scss";
+$mWidth: 94%;
+
+.patient-page{
+    @include setWidth();
+    // display: flex;
+    padding-bottom: 5rem;
+    div.title{
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        margin-bottom: 1.5rem;
+        >div.text{ 
+            width: 70%;
+            font-size: 1.5rem;
+            color: $textColor;
+            font-weight: bold;
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            sup{
+                font-size:6px;
+                margin-top: -.2rem;
+            }
+        }
+        >div.logo{
+            width: 30%;
+            text-align: right;
+            img{
+                height: 4.5rem;
+                width: auto;
+                margin-right: 10%;
+            }
+        }
+    }
+    .page-container{
+        display: flex;
+        .leftPanl{
+            width: 55%;
+            .panel{
+                color: $textColor;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-top: 1.5rem;
+                padding-bottom: .5rem;
+                
+            }
+            dl.outer{
+                counter-reset: my-badass-counter;
+                dt{
+                    color: $textColor;
+                    margin-left: 25px;
+                    ul.inner{
+                        margin-top: 0;
+                        padding-top: 0;
+                        list-style: disc;
+                        li{
+                            color: #666;
+                            margin-left: -25px;
+                            // font-size: 14px;
+                            line-height: 20px;
+                            sup{font-size: 8px;}
+                            span{
+                                color: #000;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                dt::before{
+                    content: counter(my-badass-counter);
+                    counter-increment: my-badass-counter;
+                    width: 18px;
+                    height: 18px;
+                    color: #fff;
+                    background: $textColor;
+                    border-radius: 50%;
+                    position: absolute;
+                    text-align: center;
+                    margin-left: -25px;
+                }
+              
+                div.link{display: none;}
+            }
+        }
+        .rightPanel{
+            width: 45%;
+            div.box{
+                // border: 1px solid #62bb46;
+                border: 2px solid rgba(98, 187, 70, 0.5);
+                // width: 78%;
+                min-width: 300px;
+                margin-left:20%;
+                border-radius: 10px;
+                padding: 10px 20px;
+                font-size: 12px;
+                color: $textColor;
+                background: url(../../../assets/imgs/patient/cta-dots.png) bottom center no-repeat;
+                background-size: auto 250px;
+                .desc{
+                    .link{display: none;}
+                }
+                .panel{
+                    font-weight: bold;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+        .panel{
+            span.icon{display: none;}
+        }
+        div.link{
+            width: $mWidth; 
+            margin: 0 auto;
+            border: 1px solid rgba(98, 187, 70, 1);
+            box-shadow: 0 0 1px 0px #62bb46 inset, 0 0 1px 0px #62bb46;
+            border-radius: 5px;
+            height: 3rem;
+            margin-top:1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            font-size: 14px;
+            background: #fff;
+            >span{
+                width: 85%;
+            }
+            >a{
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background: #62bb46;
+                text-align: center;
+                line-height: 28px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) and (min-width: 641px){
+    .patient-page{
+        .page-container{
+            .rightPanel{
+                div.box{
+                    min-width: 260px;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 640px){
+    .patient-page{
+        width: 100%;
+        padding-top:0;
+        padding-bottom: 2rem;
+        div.title{
+            flex-direction:column-reverse;
+            >div.text{ 
+                width: $mWidth;
+                margin: 0 auto;
+            }
+            >div.logo{
+                width: 100%;
+                text-align: left;
+                margin-bottom: 2rem;
+                img{
+                    padding-left: 1rem;
+                }
+            }
+        }
+        .page-container{
+            flex-direction: column;
+            .leftPanl{
+                width: 100%;
+                .panel{
+                    width: 100%;
+                    background-color: $textColor;
+                    color: #fff;
+                    margin:0;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+                dl.outer{
+                    width: $mWidth;
+                    margin: 0 auto;
+                    font-size: 12px;
+                    margin-top: 1rem;
+                    display: none;
+                    div.link{display: flex; color: $textColor;}
+                    div.border{
+                        width: $mWidth;
+                        margin: 0 auto;
+                        border-top: 1px dashed $textColor;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    dt::before{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                dl.outer.show{
+                    display: block;
+                }
+            }
+            .rightPanel{
+                width: 100%;
+                div.box{
+                    margin: 0px;
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    padding: 0px;
+                    .desc{
+                        display: none;
+                        p{
+                            width: $mWidth; 
+                            margin: 0 auto;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                            color: #000;
+                            // display: none;
+                        }
+                        .link{
+                            display: flex;
+                            width: 88.5%;
+                        }
+                    }
+                    .desc.show{
+                        display: block;
+                    }
+                    
+                    div.link{
+                        display: none;
+                    }
+                    .link.show{
+                        display: flex;
+                        width: 88.5%;
+                    }
+                }
+            }
+            .panel{
+                width: 100%;
+                background-color: $textColor;
+                color: #fff;
+                margin:0;
+                font-size: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-top: .2rem;
+                a{  padding: 1rem;
+                    cursor: pointer; 
+                }
+                span.icon{
+                    float: right;
+                    margin-right: 2rem;
+                    display: block;
+                }
+                // ::after{
+                //     content: "\f000";
+                //     font-family: FontAwesome;
+                //     position: absolute;
+                //     right: 1rem;
+                // }
+            }
+        }
+        
+    }
+}

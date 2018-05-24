@@ -1,0 +1,106 @@
+<div class = "patient-page hcp-page">
+  <div class ="title">
+    <div class = "text">THERA patient support<sup>TM</sup> is here to help</div>
+    <div class="logo"><img src="assets/imgs/main/Egrifta_Logo_Small.png" alt="logo" /></div>
+  </div>
+  <div class = "page-container">
+    <div class="leftPanl">
+      <div class="panel"><a (click)="toggle(0)">PROGRAM SERVICES<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[0]"></i><i class="fa fa-chevron-up" *ngIf="panels[0]"></i></span></a></div>
+    <dl class="outer" [ngClass]="{'show': panels[0] }">
+      <dt>Access and assistance throughout treatment
+        <div class = "description">
+            Expert Patient Care Coordinators help patients:
+        </div>
+        <ul class="inner">
+          <li>
+            Enroll in the EGRIFTA® Co-Pay Assistance Program that covers up to $6,000 per calendar year, if eligible
+            <ul class = "inner">
+              <li>Only for commercially insured patients</li>
+              <li>Maximum of 12 prescriptions per year</li>
+              <li>No activation required by you or your physician</li>
+            </ul>
+          </li>
+          <li>Identify the best insurance and coverage options</li>
+          <li>Follow up about your insurance benefits</li>  
+          <li>Navigate the prior authorization (PA) processes for insurance companies</li>  
+          <li>Find in-network specialty pharmacies</li>  
+          <li>Prepare for therapy (i.e. educational materials and sharps containers, if needed)</li>
+          <li>Verify eligibility to enroll in the EGRIFTA® Financial Assistance Program that may help with the cost of therapy</li>  
+        </ul>
+      </dt>
+      
+      <div class="link"><span>EGRIFTA® Enrollment Form </span><a><i class="fa fa-chevron-right"></i></a></div>
+        <div class="link">
+          <span>EGRIFTA® Enrollment Form – Fast Track Guide</span> 
+          <a href = "#" target = "_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="border"></div>
+      <dt >Added support from Staff Nurses
+        <div class = "description">
+            Our knowledgeable Staff Nurses help:
+        </div>
+        <ul class="inner last">
+          <li>Train patients on proper injection and reconstitution techniques</li>
+          <li>Share advice for starting and staying on therapy</li>
+          <li>Answer common therapy-related questions throughout their treatment</li>
+        </ul>
+        <div class = "description">
+            Spanish speaking Staff Nurses are available for patient convenience
+        </div>
+      </dt>
+      <!-- <div class="border"></div> -->
+      <div class="link">
+          <span>EGRIFTA® Step-by-step Administration Guide</span> 
+          <a href = "assets/pdfs/egrifta/EGRIFTA-Step-By-Step-Guide.pdf" target = "_blank">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="link">
+          <span>EGRIFTA® Step-by-step Administration Video</span> 
+          <a class = "pointer">
+            <i class="fa fa-chevron-right" onclick = "app.openVideo()"></i>
+          </a>
+        </div>
+    </dl>
+  </div>
+  <div class="rightPanel">
+    <div class="box">
+      <div class="emphasize panel"><a (click)="toggle(1)">HOW TO GET STARTED<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[1]"></i><i class="fa fa-chevron-up" *ngIf="panels[1]"></i></span></a></div>
+      <div class="desc" [ngClass]="{'show': panels[1]}">
+        <p>To get new patients started on EGRIFTA<sup>®</sup> and connected with THERA patient support<sup>TM</sup>, download and complete
+          the <strong>EGRIFTA<sup>®</sup> Enrollment Form.</strong></p>
+          <p>Questions? Contact us at 1-833-23-THERA (1-833-238-4372), Mon-Fri 8AM-8PM ET.</p>
+        <div class="link"><span>EGRIFTA® Enrollment Form </span><a><i class="fa fa-chevron-right"></i></a></div>
+      </div>
+      <div class="emphasize panel"><a (click)="toggle(2)">FORMS AND RESOURCES<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[2]"></i><i class="fa fa-chevron-up" *ngIf="panels[2]"></i></span></a></div>
+      <div class="link" [ngClass]="{'show': panels[2]}"><span>EGRIFTA® Enrollment Form </span><a><i class="fa fa-chevron-right"></i></a></div>
+      <div class="link" [ngClass]="{'show': panels[2]}">
+        <span>EGRIFTA® Enrollment Form<br /> – Fast Track Guide</span> 
+        <a href = "#" target = "_blank">
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="link" [ngClass]="{'show': panels[2]}">
+        <span>EGRIFTA® Step-by-step Administration Guide</span> 
+        <a href = "assets/pdfs/egrifta/EGRIFTA-Step-By-Step-Guide.pdf" target = "_blank">
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="link" [ngClass]="{'show': panels[2]}">
+        <span>EGRIFTA® Step-by-step Administration Video</span> 
+        <a class = "pointer">
+          <i class="fa fa-chevron-right" onclick = "app.openVideo()"></i>
+        </a>
+      </div>
+      <div class="link" [ngClass]="{'show': panels[2]}">
+        <span>EGRIFTA® Prescribing Information </span>
+        <a href = "assets/pdfs/egrifta/EGRIFTA-Prescribing-Information.pdf" target = "_blank">
+          <i class="fa fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>

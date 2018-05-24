@@ -1,0 +1,148 @@
+@import '../../mixin.scss';
+$dPadding: 30px;
+
+#main-page-container{
+    @include setWidth();
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    #main-logo-section {
+        padding-top: $dPadding;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .slogan h1{
+        font-weight: bold;
+
+        @media (max-width: 480px){
+            font-size: 14px;
+        }
+    }
+
+    .line img{
+        width: 100%;
+        padding: $dPadding 0;
+    }
+
+    .line.bottom-line{
+        padding-top: $dPadding;
+    }
+
+    .button-left,
+    .button-right{
+        float: left;
+        width: 45%;
+        margin-right: 9%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        @media (max-width: 480px){
+            width: 48%;
+            margin-right: 2%;
+        }
+    }
+
+    .button-right {
+        margin-right: 0;
+    }
+
+    .sub-title{
+        padding: 10px 0;
+        clear: both;
+
+        @media (max-width: 480px){
+            font-size: 12px;
+        }
+    }
+
+    .option-section {
+        padding: 0 8%;
+
+        @media (max-width: 480px) {
+            padding: 0;
+        }
+
+        .client-type{
+            #patient,
+            #provider{
+                background-image: url("../../assets/imgs/main/dots_inactive.jpg");
+                padding: 30px 0;
+
+                .button-logo{
+                    float: left;
+                    width: 30%;
+                    margin-right: 5%;
+                }
+                .button-logo img{
+                    width: 50%;
+                    padding-left: 50px;
+
+                    @media (max-width: 480px){
+                        padding-left: 10px;
+                        width: 70%;
+                    }
+                }
+                .button-text{
+                    color: #97b1d1;
+                    // padding-top: 15px;
+                    float: left;
+                    width: 65%;
+                    text-align: left;
+
+                    @media (max-width: 480px){
+                        // padding-top: 10px;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+           
+            #patient.active{
+                background-image: url("../../assets/imgs/main/dots_active.jpg");
+                .button-text {
+                    color: #fff;
+                }
+            }
+            #provider.active{
+                background-image: url("../../assets/imgs/main/dots_active.jpg");
+                .button-text {
+                    color: #fff;
+                }
+            }
+        }
+
+        .info-type{
+            .button{
+                border-color: #97b1d1;
+                img{
+                    opacity: 0.3;
+                    height: 55px;
+                    padding: 25px 0;
+                }
+            }
+            .button.active{
+                border-color: #0c5ba5;
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+
+        .button {
+            @include setButtonBorder();
+        }
+    }
+    .continue-button {
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+    .continue-button.active{
+        cursor: pointer;
+    }
+}

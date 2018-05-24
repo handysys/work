@@ -1,0 +1,33 @@
+@mixin setWidth(){
+    width: 90%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+@mixin setTwoColumn {
+    column-count: 2;
+    column-gap: 100px;
+
+    @media (max-width: 480px){
+        column-gap: 20px;
+    }
+}
+
+@mixin setButtonBorder() {
+    border: 1px solid #d9e6f1;
+    border-radius: 10px;
+}
+
+@mixin transition() {
+    $style: all .3s ease-in;
+    -moz-transition:    $style;
+    -o-transition:      $style;
+    -webkit-transition: $style;
+    transition:         $style;
+}
+
+$textColor: #0c5ba5;
+
+.dark-blue{
+    color:#0c5ba5;
+}

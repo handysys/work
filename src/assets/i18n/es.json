@@ -1,0 +1,103 @@
+{
+    "header": {
+        "patient": "Para pacientes",
+        "hcp": "Para proveedores de atención médica",
+        "form": "Solicite más información",
+        "website": "Visite Egrifta.com",
+        "contact": "1-833-23-THERA (1-833-238-4372), de lun. a vie. de 8:00 a. m. a 8:00 p. m. (hora del este)"
+    },
+
+    "footer": {
+        "privacy": "Política de privacidad",
+        "legal" : "Declaración legal",
+        "info" : "© 2018 Theratechnologies Inc. Todos los derechos reservados.",
+        "egrifta" : "EGRIFTA® es una marca registrada de Theratechnologies Inc."
+    },
+
+    "patient-top": {
+        "title": "THERA patient support™ está aquí para ayudar",
+        "description": "Además de hablar con su proveedor de atención médica, <b>THERA patient support™</b> es su referente cuando necesita guía yapoyo adicionales durante la terapia. Desde guiarlo en problemas conel seguro hasta responder preguntas frecuentes relacionadas con laterapia, nuestro equipo capacitado y atento está aquí para usted"
+    },
+
+    "patient-left": {
+        "title": "SERVICIOS DEL PROGRAMA",
+        "dt1": "Acceso y asistencia durante todo el tratamiento",
+        "description1": "Los coordinadores expertos de atención al paciente están listos para ayudarle a:",
+        "list1out1": "Inscribirse en el Programa de asistencia de copago de EGRIFTA® que cubre hasta $6,000 por año calendario, si es elegible.",
+        "list1out1inner1": "Solo para pacientes con cobertura comercial",
+        "list1out1inner2": "Máximo de 12 recetas al año.",
+        "list1out1inner3": "No se requiere activación por parte de usted o su médico",
+        "list1out2": "Identificar las mejores opciones de seguro y cobertura.",
+        "list1out3": "Hacer un seguimiento de sus beneficios del seguro.",
+        "list1out4": "Encontrar las farmacias especializadas adecuadas en la red de su seguro, para que pueda recibir rápidamente su medicament",
+        "list1out5": "Prepararlo para la terapia (proporcionamos materiales educativos yrecipientes para objetos cortantes y punzantes, si fuera necesario)",
+        "list1out6": "Verificar su elegibilidad para inscribirse en el Programa de asistencia financiera de EGRIFTA® que puede ayudarlo con el costo de la terapia",
+        "dt2": "Apoyo adicional del personal de enfermerí",
+        "description2": "Nuestro personal de enfermería experto y atento está preparado para:",
+        "list2out1": "Capacitarlo sobre cómo mezclar e inyectar EGRIFTA® de forma correcta.",
+        "list2out2": "Compartir asesoría sobre cómo comenzar y permanecer en la terapi",
+        "list2out3": "Contestar preguntas frecuentes relacionadas con la terapia durante todo su tratamiento."
+    },
+
+    "patient-right": {
+        "title1": "¿CÓMO INICIO EL PROCESO?",
+        "p1": "Para iniciar el proceso en EGRIFTA® y conectarse con THERA patient support™, descargue el <b>Formulario de inscripción de EGRIFTA®</b>.",
+        "p2": "Traiga este formulario a su próxima visita con el proveedor de atención médica, junto con su información de seguro.",
+        "title2": "FORMULARIOS Y RECURSOS",
+        "button1": {
+            "text": "Formulario de inscripción de EGRIFTA®",
+            "link": "#"
+        },
+        "button2": {
+            "text": "Autorización del paciente y firma electrónica de EGRIFTA®",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Patient-Authorization-Form-Spanish.pdf"
+        },
+        "button3": {
+            "text": "Folleto para el paciente de EGRIFTA®",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Doctor-Discussion-Guide-Spanish.pdf"
+        },
+        "button4": {
+            "text": "Guía de administración paso a paso de EGRIFTA®",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Step-By-Step-Guide-Spanish.pdf"
+        },
+        "button5": {
+            "text": "Video de administración paso a paso de EGRIFTA®"
+        },
+        "button6": {
+            "text": "Información de prescripción de EGRIFTA®",
+            "link": "assets/pdfs/egrifta/EGRIFTA-Prescribing-Information.pdf"
+        }
+    },
+
+    "form": {
+        "title": "Para solicitar más información sobre el Programa THERA patient support™, complete el formulario que se encuentra a continuación.",
+        "require": "*Campo obligatorio.",
+        "type": "*Soy:",
+        "patient": "Pacient",
+        "hcp": "Proveedor de atención médic",
+        "error1": "Por favor, háganos saber acerca de usted",
+        "error2": "Por favor, introduzca su nombre de pila",
+        "error3": "Por favor ingrese su apellido",
+        "error4": "Por favor ingrese su ciudad",
+        "error5": "Por favor ingrese su estado",
+        "error6": "Por favor ingrese un código postal válido",
+        "error7": "Por favor ingrese su número de teléfono incluyendo el código de área",
+        "error8": "Por favor ingrese una dirección de correo electrónico válida",
+        "error9": "Por favor ingrese su solicitud de información",
+        "fname": "*Nombre",
+        "lname": "*Apellido",
+        "address": "Dirección",
+        "city": "*Ciudad",
+        "state": "*Estado",
+        "zip": "*Código postal",
+        "phone": "*Teléfono",
+        "mail": "*Correo electrónico",
+        "comment": "*Comentarios",
+        "legal": "Al proporcionar la información anterior, usted acepta que Theratechnologies Inc. le proporcione información relacionada con los productos de Theratechnologies. <br> La información que proporciona estará cubierta por nuestra <a href = 'http://www.theratech.com/#/privacy-policy' target = '_blank'>política de privacidad.",
+        "submit": "assets/imgs/form/submit-active_s.png",
+        "cancel": "assets/imgs/form/cancel-active_s.png",
+        "thanks": "Gracias por su solicitud",
+        "info": "Un representante de <b>THERA patient support™</b> se pondrá en contacto con usted a la brevedad.",
+        "back": "assets/imgs/form/back-active_s.png"
+    }
+}

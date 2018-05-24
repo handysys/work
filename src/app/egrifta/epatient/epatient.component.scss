@@ -1,0 +1,62 @@
+@import '../../trogarzo/patient/patient.component.scss';
+
+.patient-page{
+    div.description{
+        color: #666;
+        margin-right: -1rem;
+    }
+
+    .page-container{
+        $purple: #7b2b83;
+        .rightPanel{
+            
+            div.box{
+                border: 2px solid $purple;
+            }
+        }
+
+        div.link{
+            border-color: $purple;
+            box-shadow: 0 0 1px 0px $purple inset, 0 0 1px 0px $purple;
+
+            >a{
+                background: $purple;
+            }
+
+            .pointer{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 640px){
+    .patient-page{
+        .title{
+            margin-bottom: 0;
+        }
+        // div.description{
+        //     width: 94%;
+        //     margin: 1rem auto;
+        //     margin-top: 0;
+        //     font-size: 12px;
+        // }
+
+        .page-container{
+            .leftPanl{
+                p.description{
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-size: 12px;
+                }
+            }
+            .rightPanel{
+                div.box{
+                    border: none;
+                }
+            }
+        }
+    }
+    
+}

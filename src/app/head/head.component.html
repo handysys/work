@@ -1,0 +1,45 @@
+<header>
+  <div class="lang"><ul>
+    <li ><a href="javascript:;" (click)="setLanguage('en')" class="first" [ngClass]="{'active': isLangEn }">English</a></li>
+    <li><a href="javascript:;" (click)="setLanguage('es')" [ngClass]="{'active': !isLangEn }">Español</a></li>
+  </ul></div>
+  <div class="aboveMenu">
+    <div class="logo">
+      <div id="menuToggle">
+        <input type="checkbox" (change)="toggleMenu=!toggleMenu" [checked]="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menuToggle-menu">
+        </ul>
+      </div>
+      <ul class="toggle-menus" [ngClass]="{'show-menu': toggleMenu}" >
+          <li><a href="javascript:;" (click)="mobileMenuClick('patient')"><img src='assets/imgs/head/Menu_Patient.png' alt="Menu" /><span class="text">{{'header.patient' | translate}}</span></a></li>
+          <li><a href="javascript:;" (click)="mobileMenuClick('hcp')"><img src='assets/imgs/head/Menu_hcp.png' alt="Menu" /><span class="text">{{'header.hcp' | translate}}</span></a></li>
+          <li><a href="javascript:;" (click)="mobileMenuClick('form')"><img src="assets/imgs/head/Menu_Info.png" alt="Info Menu" /><span class="text">{{'header.form' | translate}}</span></a></li>
+          <li class="last"><a href="{{egrifta? 'http://www.egrifta.com': 'http://www.trogarzo.com'}}" target = "_blank"><img src="assets/imgs/head/Menu_Visit.png" alt="Visit Menu" />
+            <span class="text" [innerHTML]="'header.website'|translate" *ngIf="egrifta">Visit Egrifta.com</span>
+            <span class="text" [hidden]="egrifta">Visit Trogarzo.com</span></a></li>
+      </ul>
+      <a href="javascript:;" routerLink="/">
+        <img src="assets/imgs/head/Thera_Logo_menu.png" alt="Thera Logo" class="theraLogo" />
+      </a>
+    </div>
+    <div class="contact">{{'header.contact' | translate}}</div>
+  </div>
+  <div class="menu">
+      
+    <ul class="nav">
+      <li><a href="javascript:;" (click)="openLink(0)"><img src={{menus[0].img}} alt="Menu" /><span class="text">{{menus[0].text}}</span><i class="fa fa-chevron-down" *ngIf="!dropdown"></i></a>
+        <ul [ngClass]="{'show': dropdown}">
+          <li [ngClass]="{'spanish': !isLangEn&&menus[0]['url']=='hcp'}"><a href="javascript:;" (click)="openLink(1)"><img src={{menus[1].img}} alt="Menu" /><span class="text">{{menus[1].text}}</span></a></li>
+        </ul>
+      </li>
+      <li ><a href="javascript:;" (click)="openForm()"><img src="assets/imgs/head/Menu_Info.png" alt="Info Menu" /><span class="text">{{'header.form' | translate}}</span></a></li>
+      <li class="last"><a href="{{egrifta? 'http://www.egrifta.com': 'http://www.trogarzo.com'}}" target = "_blank"><img src="assets/imgs/head/Menu_Visit.png" alt="Visit Menu" />
+        <span class="text" [innerHTML]="'header.website'|translate" *ngIf="egrifta">Visit Egrifta.com</span>
+        <span class="text" [hidden]="egrifta">Visit Trogarzo.com</span></a></li>
+    </ul>
+  </div>
+  <div class="underMenu"></div>
+</header>

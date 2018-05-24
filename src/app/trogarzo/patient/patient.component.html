@@ -1,0 +1,56 @@
+<div class = "patient-page">
+  <div class="title">
+    <div class = "text">THERA patient support<sup>TM</sup> is here to help</div> 
+     <div class="logo"><img src="assets/imgs/main/Trogarzo_Logo_Small.png" alt="logo" /></div>
+  </div>
+  <div class="page-container">
+      <div class="leftPanl">
+          <div class="panel"><a (click)="toggle(0)">PROGRAM SERVICES<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[0]"></i><i class="fa fa-chevron-up" *ngIf="panels[0]"></i></span></a></div>
+          <dl class="outer" [ngClass]="{'show': panels[0] }">
+            <dt>Enrollment Assistance
+              <ul class="inner">
+                <li>A dedicated Patient Care Coordinator will help provide timely access to therapy.</li>
+              </ul>
+            </dt>
+            
+            <div class="link"><span>TROGARZO™ Enrollment Form </span><a href="https://theratechnologies.s3.amazonaws.com/prod/media/TROGARZO_Enrollment_Form_fillable.pdf" target="_blank"><i class="fa fa-chevron-right"></i></a></div>
+            <div class="border"></div>
+            <dt>Reimbursement Navigation and Financial Assistance
+              <ul class="inner">
+                <li><span>THERA patient support™</span> manages the assessment and verification of private and
+                    public insurance coverage.</li>
+                <li>For uninsured patients, alternative coverage or assistance options may be available.</li>
+              </ul>
+            </dt>
+            <div class="border"></div>
+            <dt>Infusion Coordination and Support
+              <ul class="inner">
+                <li>You can receive TROGARZO™ infusions at locations convenient to you: Physician
+                    offices, infusion centers, or at home.</li>
+                <li>THERA patient support™ can coordinate infusion locations and provide ongoing
+                    appointment reminders.</li>
+              </ul> 
+            </dt>
+            <div class="link"><span>TROGARZO™ Patient Brochure</span> <a href = "assets/pdfs/trogarzo/TROGARZO-Patient-Brochure.pdf" target = "_blank"><i class="fa fa-chevron-right"></i></a></div>
+          </dl>
+        </div>
+        <div class="rightPanel">
+        
+          <div class="box">
+            <div class="emphasize panel"><a (click)="toggle(1)">HOW TO GET STARTED<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[1]"></i><i class="fa fa-chevron-up" *ngIf="panels[1]"></i></span></a></div>
+            <div class="desc" [ngClass]="{'show': panels[1]}">
+              <p >To get started on TROGARZO<sup>TM</sup> and connected with THERA patient support<sup>TM</sup>, download
+                the <strong>TROGARZO™ Enrollment Form.</strong></p>
+              <p>Bring this form with you to your next health care provider appointment, along with your
+                  insurance information.</p>
+                  <div class="link"><span>TROGARZO™ Enrollment Form </span><a href="https://theratechnologies.s3.amazonaws.com/prod/media/TROGARZO_Enrollment_Form_fillable.pdf" target="_blank"><i class="fa fa-chevron-right"></i></a></div>
+            </div>
+            
+            <div class="emphasize panel"><a (click)="toggle(2)">FORMS AND RESOURCES<span class="icon"><i class="fa fa-chevron-down" *ngIf="!panels[2]"></i><i class="fa fa-chevron-up" *ngIf="panels[2]"></i></span></a></div>
+            <div class="link" [ngClass]="{'show': panels[2]}"><span>TROGARZO™ Enrollment Form </span><a href="https://theratechnologies.s3.amazonaws.com/prod/media/TROGARZO_Enrollment_Form_fillable.pdf" target="_blank"><i class="fa fa-chevron-right"></i></a></div>
+            <div class="link" [ngClass]="{'show': panels[2]}"><span>TROGARZO™ Patient Brochure</span> <a href = "assets/pdfs/trogarzo/TROGARZO-Patient-Brochure.pdf" target = "_blank"><i class="fa fa-chevron-right"></i></a></div>
+            <div class="link" [ngClass]="{'show': panels[2]}"><span>TROGARZO™ Prescribing<br /> Information </span><a href = "assets/pdfs/trogarzo/TROGARZO-Prescribing-Information.pdf" target = "_blank"><i class="fa fa-chevron-right"></i></a></div>
+          </div>
+        </div>
+  </div>
+</div>
